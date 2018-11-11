@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Prime Products",
+    "description": "Will turn every number on a webpage into it's factorization of primes.",
+    "version": "1.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "primeIcon128.png"
+    }
+    
+}
